@@ -1,0 +1,64 @@
+/* O menu navbar */
+.navbar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(3, 72, 150); 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+/* Os links navbar */
+.navbar a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Ao passar o mouse sobre os links de navegação, altera sua cor */
+.navbar a:hover{
+    color: #f1f1f1;
+}
+
+/* Posicionando e estilizando o botão Fechar (canto superior direito) */
+.navbar .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* O botão usado para abrir a barra de navegação */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(3, 72, 150);
+  color: white;
+  padding: 10px 15px;
+  border: dashed;
+}
+
+.openbtn:hover {
+  background-color: rgb(4, 104, 161);
+}
+
+/* Estilizando o conteúdo da página - uso isso para empurrar o conteúdo 
+da página para a direita ao abrir a navegação lateral */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* O estilo da navbar foi alterado com menos preenchimento e um tamanho de fonte menor */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manual Mario World</title>
+	<link rel="shortcut icon" href="img/mario.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylepag4.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/StyleGaleria.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">
+				<a href="/index.html"><img src="img/mariofeliz.png" alt="logo-mario">Super Mario World</a>
+			</h1>
+			<img class="tmp" src="img/superMarioWorld.png" alt="texto mario png">
+				<!-- SUBSTITUINDO PARA APLICAR UMA NOVA ESTRUTURA NA BARRA DE NAVEGAÇÃO -->
+			    <!-- <ul>
+					<li class="control"><a href="/pags/pag1.html">Operações do Controle</a></li>
+					<li class="game"><a href="/pags/pag2.html">Como Jogar</a></li>
+					<li class="person"><a href="/pags/pag3.html">Personagens</a></li>
+					<li class="save"><a href="/pags/pag4.html">Como Salvar</a></li>
+				</ul> -->
+		</div>
+    </header>
+
+	<div id="myNavbar" class="navbar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="pags/pag1.html">Operações do Controle</a>
+		<a href="pags/pag2.html">Como Jogar</a>
+		<a href="pags/pag3.html">Personagens</a>
+		<a href="pags/pag4.html">Como Salvar</a>
+	  </div>
+	  
+	  <div id="main">
+		<button class="openbtn" onclick="openNav()">&#9776; MENU</button>
+	  </div>
+
+	<main>
+	<div class="container-index">
+		<img src="img/mariosuper.gif" alt="mario-super">
+		<h1>Sobre Super Mario</h1>
+    	<p>O incrivel jogo super mario, um classico desde o seculo passado mas que ainda aquece o coração de muita gente mundo afora e de todas as idades</p>
+		<p>Super Mario, lançado originalmente em 1990 para o Super Nintendo, é um dos games mais nostálgicos da Nintendo. Ainda assim, o título reserva vários mistérios para quem apenas jogou na infância. Atualmente, é possível jogá-lo em plataformas mais modernas, como New Nintendo 3DS, Wii U e Nintendo Switch – este último como um bônus na assinatura do serviço Nintendo Switch Online.</p>
+		<p>Originalmente, Mario era carpinteiro, mas, depois dos canos nos quais ele entrava literalmente no famosíssimo jogo Mario Bros, passou a ser considerado encanador. ... A série Mario já possui mais de 500 milhões de cópias vendidas, e os seus jogos vão desde o modesto Super Nintendo até o moderno Wii, ambos da Nintendo</p>
+		<p>Confira acima, na lista a seguir, as melhoras dicas para mandar bem na aventura de Super Mario World que marcou os anos 90, além de conhecer alguns segredos úteis.</p>
+		<br>
+		<img src="img/marioypl.gif" alt="mario-historia">
+		<br>
+		<h2>A História</h2>
+		<p>Depois de salvar o Reino de cogumelo do terrível Bowser e do resto dos Koopas no Super Mario 3, Mario e Luigi precisavam descansar das suas aventuras. Então, decidiram que o melhor lugar para passarem as suas férias era um lugar mágico chamado Terra do Dinossauro.</p>
+		<p>Mas, quando Mario e Luigi estavam deitados na praia tirando um cochilo, a Princesa Toadstool desapareceu, aparentemente capturada pelas forças do mal. Enquanto procuravam durante horas, por sua amiga perdida, Mario e Luigi inesperadamente cairam em cima de um enorme ovo na floresta.</p>
+		<p>De repente o ovo quebrou-se, e de dentro dele pulou um jovem dinossauro chamado YOCHI que contou ao Mario e ao Luigi uma história muito triste, de como os seus companheiros dinossauros foram trancados em ovos iguais por um grupo de tartarugas terríveis.</p>
+		<p>"Que tartarugas monstruosas!", Luigi exclamou "Bowser e sua turma estão de volta!". Mario balançou a cabeça, concordando com Luigi. Juntos, Mario, Luigi e Yochi partiram através da Terra do Dinossauro em busca da Princesa e dos amigos de Yochi. Assim que começaram a viagem, Yochi deu para o Mario uma linda capa. "Ela vai ajudar você", Yochi disse. "Dizem, que tem poderes mágicos".</p>
+		<p>Com um pouco de sorte (e a ajuda da capa mágica), nossos amigos podem derrotar os sete mundos do Bowser. Muitos lugares estão muito bem escondidos, por isso, explore cada um e tente de tudo. Nem todas as áreas devem ser exploradas com o objetivo de libertar os dinossauros e salvar a Princesa Toadstool, pois existem muitos tesouros para serem encontrados nos locais mais inesperados. Você precisa procurar em todas as áreas para descobrir que tipos de tesouros existem lá... no Super Mario World.</p>
+		<br>
+
+	<!--Imagens usadas para abrir o lightbox-->
+
+	<div class="row">
+		<div class="column">
+		  <img src="img/marioyochi.PNG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		</div>
+		<div class="column">
+		  <img src="img/enemies1.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		</div>
+		<div class="column">
+		  <img src="img/mariomapa.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		</div>
+		<div class="column">
+		  <img src="img/mariomapa2.gif" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		</div>
+		<div class="column">
+		  <img src="img/mariodino.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		</div>
+	  </div>
+	  <!--O modal / Lightbox -->
+
+	  <div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	  
+		  <div class="mySlides">
+			<div class="numbertext">1 / 5</div>
+			<img src="img/marioyochi.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">2 / 5</div>
+			<img src="img/enemies1.png" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">3 / 5</div>
+			<img src="img/mariomapa.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">4 / 5</div>
+			<img src="img/mariomapa2.gif" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">5 / 5</div>
+			<img src="img/mariodino.jpg" style="width:100%">
+		  </div>
+
+	  <!-- Controles seguintes / anteriores -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  <!-- Texto da legenda -->
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+	  
+	  <!-- Controles de imagem em miniatura -->
+	  
+		  <div class="column">
+			<img class="demo cursor" src="img/marioyochi.PNG" style="width:100%" onclick="currentSlide(1)" alt="Personagens do Super Mario World">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="img/enemies1.png" style="width:100%" onclick="currentSlide(2)" alt="Inimigos do Mario">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="img/mariomapa.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mapa do Mario">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="img/mariomapa2.gif" style="width:100%" onclick="currentSlide(4)" alt="Mapa do Mario 2">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="img/mariodino.jpg" style="width:100%" onclick="currentSlide(5)" alt="Mario e Yoshi">
+		  </div>
+		</div>
+	  </div>
+	 </div>
+   </div>
+   </main>
+   <br>
+
+   <footer>
+	   <div class="rodape-principal">
+		   <span>Todos os Direitos Reservados.</span>
+	   </div>
+   </footer>
+   <audio src="des/audio1.mp3" autoplay>
+
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html> 
